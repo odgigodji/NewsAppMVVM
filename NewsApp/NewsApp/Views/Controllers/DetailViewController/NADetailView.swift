@@ -25,8 +25,8 @@ final class NADetailView: UIView {
         
         let padding = CGFloat(10)
         configureLabels()
-        configureTopStackView(padding: padding)
         configureBottomStack(padding: padding)
+        configureTopStackView(padding: padding)
     }
     
     required init(coder: NSCoder) {
@@ -76,6 +76,7 @@ final class NADetailView: UIView {
             topStackView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: padding),
             topStackView.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: padding),
             topStackView.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -padding),
+            topStackView.bottomAnchor.constraint(equalTo: bottomStackView.topAnchor, constant: -padding)
         ])
     }
     
@@ -101,7 +102,8 @@ final class NADetailView: UIView {
         titleLabel.numberOfLines = 3
         titleLabel.font = UIFont.systemFont(ofSize: 22, weight: .bold)
         
-        descriptionLabel.numberOfLines = 5
+        descriptionLabel.contentMode = .scaleToFill
+        descriptionLabel.numberOfLines = 0
         descriptionLabel.font = UIFont.systemFont(ofSize: 20)
         
         sourceLabel.textColor = .gray
