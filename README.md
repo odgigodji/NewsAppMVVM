@@ -10,5 +10,4 @@ app with news
 Новости сохраняются в UserDefaults и показываются при каждом новом запуске
 
 
-###
-README under construction....
+#### README under construction....
