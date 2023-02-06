@@ -99,7 +99,7 @@ final class NADetailView: UIView {
     }
     
     private func configureLabels() {
-        titleLabel.numberOfLines = 3
+        titleLabel.numberOfLines = 0
         titleLabel.font = UIFont.systemFont(ofSize: 22, weight: .bold)
         
         descriptionLabel.contentMode = .scaleToFill
