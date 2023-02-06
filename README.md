@@ -8,3 +8,6 @@ app with news
 Посик по новостям
 
 Новости сохраняются в UserDefaults и показываются при каждом новом запуске
+
+
+README under construction....
