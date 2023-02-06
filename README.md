@@ -1,2 +1,0 @@
-# NewsAppMVVM
-app with news
